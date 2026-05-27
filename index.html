@@ -3,92 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semantic HTML Demo</title>
+    <title>Semantic HTML + BEM Example</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <h1>Semantic HTML Demo</h1>
-        <p>A simple page showing common semantic tags in action.</p>
+  <body class="page">
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <h1 class="site-header__brand">Acme Learning</h1>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#home">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#services">Services</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="container">
-        <ul>
-          <li><a href="#main-content">Main</a></li>
-          <li><a href="#article">Article</a></li>
-          <li><a href="#sidebar">Aside</a></li>
-          <li><a href="#contact">Footer</a></li>
-        </ul>
-      </div>
-    </nav>
+    <main class="page-content">
+      <article class="hero" id="home" aria-labelledby="hero-title">
+        <h2 class="hero__title" id="hero-title">
+          Build Better Frontend Foundations
+        </h2>
+        <p class="hero__subtitle">
+          This page demonstrates semantic HTML elements and BEM naming
+          conventions in a practical, readable layout.
+        </p>
+        <a class="hero__cta" href="#services">Explore Services</a>
+      </article>
 
-    <main id="main-content" class="container layout">
-      <section>
-        <h2>Section: Introduction</h2>
-        <p>
-          The <code>&lt;main&gt;</code> element holds the primary content of the
-          page. This section introduces what semantic HTML means.
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <h2 class="content-section__title" id="about-title">About</h2>
+        <p class="content-section__text">
+          We teach developers to write maintainable markup and scalable CSS with
+          clear structure and predictable class names.
         </p>
       </section>
 
-      <article id="article">
-        <header>
-          <h2>Article: Why Semantic Tags Matter</h2>
-          <p class="meta">
-            Published on <time datetime="2026-05-26">May 26, 2026</time>
-          </p>
-        </header>
+      <section
+        class="content-section"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <h2 class="content-section__title" id="services-title">Services</h2>
+        <div class="feature-grid">
+          <article class="feature-card feature-card--highlighted">
+            <h3 class="feature-card__title">Semantic Audits</h3>
+            <p class="feature-card__description">
+              Review existing pages and replace generic wrappers with
+              meaningful, accessible HTML elements.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3 class="feature-card__title">BEM Refactors</h3>
+            <p class="feature-card__description">
+              Convert fragile selectors into component-oriented block, element,
+              and modifier classes.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3 class="feature-card__title">CSS Architecture Coaching</h3>
+            <p class="feature-card__description">
+              Establish conventions that help teams move faster with fewer
+              regressions.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <p>
-          Semantic tags make documents easier to read for humans and tools,
-          including screen readers and search engines.
+      <aside class="callout" id="contact" aria-labelledby="callout-title">
+        <h2 class="callout__title" id="callout-title">Contact</h2>
+        <p class="callout__text">
+          Ready to improve your frontend architecture? Reach us at
+          <a class="callout__link" href="mailto:hello@example.com"
+            >hello@example.com</a
+          >.
         </p>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
-            alt="Laptop on a desk with code on screen"
-          />
-          <figcaption>
-            Figure: A visual placeholder inside a
-            <code>&lt;figure&gt;</code> element.
-          </figcaption>
-        </figure>
-
-        <section>
-          <h3>Subsection: Typical Structure</h3>
-          <p>
-            A good page often includes <code>&lt;header&gt;</code>,
-            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
-            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
-            <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.
-          </p>
-        </section>
-      </article>
-
-      <aside id="sidebar" aria-label="Related information">
-        <h2>Aside: Related Notes</h2>
-        <ul>
-          <li>Use one <code>&lt;main&gt;</code> per page.</li>
-          <li>Headings should follow a logical order.</li>
-          <li>Add <code>alt</code> text for meaningful images.</li>
-        </ul>
       </aside>
     </main>
 
-    <footer id="contact" class="site-footer">
-      <div class="container">
-        <p>
-          <strong>Footer:</strong> Example semantic demo page for learning HTML
-          and CSS.
-        </p>
-        <address>
-          Contact: <a href="mailto:hello@example.com">hello@example.com</a>
-        </address>
-      </div>
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        &copy; 2026 Acme Learning. All rights reserved.
+      </p>
+      <a class="site-footer__link" href="#top">Back to top</a>
     </footer>
   </body>
 </html>
