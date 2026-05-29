@@ -3,92 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semantic HTML Demo</title>
+    <title>HTML Learning Stages</title>
+    <meta
+      name="description"
+      content="Three-stage demo: semantic HTML with BEM, Tailwind CSS, and design components composition."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <h1>Semantic HTML Demo</h1>
-        <p>A simple page showing common semantic tags in action.</p>
-      </div>
+    <header class="hero" role="banner">
+      <p class="hero__eyebrow">Front-End Engineering Demo</p>
+      <h1 class="hero__title">Three Learning Stages, One Project</h1>
+      <p class="hero__subtitle">
+        Explore semantic HTML and BEM, utility-first Tailwind CSS, and reusable
+        design components through isolated examples.
+      </p>
+      <a
+        class="hero__repo-link"
+        href="https://github.com/4GeeksAcademy/ft-ai-engineering-html-demo"
+        target="_blank"
+        rel="noreferrer"
+      >
+        View Repository on GitHub
+      </a>
     </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="container">
-        <ul>
-          <li><a href="#main-content">Main</a></li>
-          <li><a href="#article">Article</a></li>
-          <li><a href="#sidebar">Aside</a></li>
-          <li><a href="#contact">Footer</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <main id="main-content" class="container layout">
-      <section>
-        <h2>Section: Introduction</h2>
+    <main class="stages" id="main-content">
+      <article
+        class="stage-card stage-card--bem"
+        aria-labelledby="stage-bem-title"
+      >
+        <h2 id="stage-bem-title">Stage 1: Semantic HTML and BEM CSS</h2>
         <p>
-          The <code>&lt;main&gt;</code> element holds the primary content of the
-          page. This section introduces what semantic HTML means.
+          Learn semantic structure with clear landmarks and class naming using
+          blocks, elements, and modifiers.
         </p>
-      </section>
-
-      <article id="article">
-        <header>
-          <h2>Article: Why Semantic Tags Matter</h2>
-          <p class="meta">
-            Published on <time datetime="2026-05-26">May 26, 2026</time>
-          </p>
-        </header>
-
-        <p>
-          Semantic tags make documents easier to read for humans and tools,
-          including screen readers and search engines.
-        </p>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
-            alt="Laptop on a desk with code on screen"
-          />
-          <figcaption>
-            Figure: A visual placeholder inside a
-            <code>&lt;figure&gt;</code> element.
-          </figcaption>
-        </figure>
-
-        <section>
-          <h3>Subsection: Typical Structure</h3>
-          <p>
-            A good page often includes <code>&lt;header&gt;</code>,
-            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
-            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
-            <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.
-          </p>
-        </section>
+        <a class="stage-card__link" href="stage-1-semantic-bem/index.html"
+          >Open Stage 1</a
+        >
       </article>
 
-      <aside id="sidebar" aria-label="Related information">
-        <h2>Aside: Related Notes</h2>
-        <ul>
-          <li>Use one <code>&lt;main&gt;</code> per page.</li>
-          <li>Headings should follow a logical order.</li>
-          <li>Add <code>alt</code> text for meaningful images.</li>
-        </ul>
-      </aside>
-    </main>
-
-    <footer id="contact" class="site-footer">
-      <div class="container">
+      <article
+        class="stage-card stage-card--tailwind"
+        aria-labelledby="stage-tailwind-title"
+      >
+        <h2 id="stage-tailwind-title">Stage 2: Tailwind CSS</h2>
         <p>
-          <strong>Footer:</strong> Example semantic demo page for learning HTML
-          and CSS.
+          Build with utility classes and spacing/color systems quickly using the
+          Tailwind browser CDN.
         </p>
-        <address>
-          Contact: <a href="mailto:hello@example.com">hello@example.com</a>
-        </address>
-      </div>
-    </footer>
+        <a class="stage-card__link" href="stage-2-tailwind/index.html"
+          >Open Stage 2</a
+        >
+      </article>
+
+      <article
+        class="stage-card stage-card--components"
+        aria-labelledby="stage-components-title"
+      >
+        <h2 id="stage-components-title">
+          Stage 3: Design Components and Composition
+        </h2>
+        <p>
+          Compose interfaces from reusable CSS components like cards, pills,
+          buttons, and panels.
+        </p>
+        <a class="stage-card__link" href="stage-3-design-components/index.html"
+          >Open Stage 3</a
+        >
+      </article>
+    </main>
   </body>
 </html>

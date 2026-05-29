@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1 - Semantic HTML and BEM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="page__header site-header" role="banner">
+      <p class="site-header__label">Stage 1</p>
+      <h1 class="site-header__title">Semantic HTML and BEM CSS</h1>
+      <p class="site-header__subtitle">
+        This page uses semantic landmarks and BEM naming conventions.
+      </p>
+      <a class="site-header__back-link" href="../index.html">Back to index</a>
+    </header>
+
+    <main class="page__main">
+      <section class="feature-grid" aria-label="Feature cards">
+        <article
+          class="feature-card feature-card--highlighted"
+          aria-labelledby="feature-structure"
+        >
+          <h2 id="feature-structure" class="feature-card__title">
+            Semantic landmarks
+          </h2>
+          <p class="feature-card__text">
+            Content is grouped with header, main, section, article, and footer
+            to improve readability and accessibility.
+          </p>
+          <span class="feature-card__pill">Block: feature-card</span>
+        </article>
+
+        <article class="feature-card" aria-labelledby="feature-naming">
+          <h2 id="feature-naming" class="feature-card__title">
+            Consistent naming
+          </h2>
+          <p class="feature-card__text">
+            Classes follow block__element and block--modifier patterns for
+            maintainable styling.
+          </p>
+          <span class="feature-card__pill">Element: feature-card__title</span>
+        </article>
+
+        <article class="feature-card" aria-labelledby="feature-scaling">
+          <h2 id="feature-scaling" class="feature-card__title">
+            Scalable styles
+          </h2>
+          <p class="feature-card__text">
+            Modifiers like feature-card--highlighted make variants predictable
+            as the interface grows.
+          </p>
+          <span class="feature-card__pill"
+            >Modifier: feature-card--highlighted</span
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="page__footer site-footer">
+      <p class="site-footer__text">
+        Stage 1 complete: semantic HTML plus BEM CSS.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* Stage-local enhancement to avoid visual noise while keeping Tailwind as primary styling source. */
+.tailwind-note {
+  background-image:
+    radial-gradient(
+      circle at 84% 16%,
+      rgba(15, 118, 110, 0.16),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #f0fdfa 0%, #ecfeff 100%);
+}
