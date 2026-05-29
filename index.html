@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Learning Stages</title>
+    <meta
+      name="description"
+      content="Three-stage demo: semantic HTML with BEM, Tailwind CSS, and design components composition."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" role="banner">
+      <p class="hero__eyebrow">Front-End Engineering Demo</p>
+      <h1 class="hero__title">Three Learning Stages, One Project</h1>
+      <p class="hero__subtitle">
+        Explore semantic HTML and BEM, utility-first Tailwind CSS, and reusable
+        design components through isolated examples.
+      </p>
+      <a
+        class="hero__repo-link"
+        href="https://github.com/4GeeksAcademy/ft-ai-engineering-html-demo"
+        target="_blank"
+        rel="noreferrer"
+      >
+        View Repository on GitHub
+      </a>
+    </header>
+
+    <main class="stages" id="main-content">
+      <article
+        class="stage-card stage-card--bem"
+        aria-labelledby="stage-bem-title"
+      >
+        <h2 id="stage-bem-title">Stage 1: Semantic HTML and BEM CSS</h2>
+        <p>
+          Learn semantic structure with clear landmarks and class naming using
+          blocks, elements, and modifiers.
+        </p>
+        <a class="stage-card__link" href="stage-1-semantic-bem/index.html"
+          >Open Stage 1</a
+        >
+      </article>
+
+      <article
+        class="stage-card stage-card--tailwind"
+        aria-labelledby="stage-tailwind-title"
+      >
+        <h2 id="stage-tailwind-title">Stage 2: Tailwind CSS</h2>
+        <p>
+          Build with utility classes and spacing/color systems quickly using the
+          Tailwind browser CDN.
+        </p>
+        <a class="stage-card__link" href="stage-2-tailwind/index.html"
+          >Open Stage 2</a
+        >
+      </article>
+
+      <article
+        class="stage-card stage-card--components"
+        aria-labelledby="stage-components-title"
+      >
+        <h2 id="stage-components-title">
+          Stage 3: Design Components and Composition
+        </h2>
+        <p>
+          Compose interfaces from reusable CSS components like cards, pills,
+          buttons, and panels.
+        </p>
+        <a class="stage-card__link" href="stage-3-design-components/index.html"
+          >Open Stage 3</a
+        >
+      </article>
+    </main>
+  </body>
+</html>

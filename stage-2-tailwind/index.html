@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 2 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-sky-50 text-slate-900">
+    <header class="mx-auto max-w-5xl px-4 pt-8 pb-5">
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-teal-700">
+        Stage 2
+      </p>
+      <h1 class="text-4xl font-black leading-tight text-slate-900 sm:text-5xl">
+        Tailwind CSS
+      </h1>
+      <p class="mt-2 max-w-3xl text-slate-600">
+        This page styles layout, spacing, and typography primarily through
+        utility classes with minimal custom CSS.
+      </p>
+      <a
+        href="../index.html"
+        class="mt-4 inline-flex rounded-full bg-teal-700 px-4 py-2 font-semibold text-white shadow-sm transition hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+      >
+        Back to index
+      </a>
+    </header>
+
+    <main class="mx-auto grid max-w-5xl gap-4 px-4 pb-10 md:grid-cols-3">
+      <section
+        class="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm md:col-span-2"
+      >
+        <h2 class="text-xl font-bold">Utility-first workflow</h2>
+        <p class="mt-2 text-slate-600">
+          Tailwind enables direct styling in markup with composable classes for
+          sizing, spacing, typography, and states.
+        </p>
+        <div class="mt-4 grid gap-3 sm:grid-cols-2">
+          <article class="rounded-xl border border-sky-100 bg-sky-50/60 p-4">
+            <h3 class="font-semibold">Fast iteration</h3>
+            <p class="mt-1 text-sm text-slate-600">
+              Adjust layout and visual hierarchy directly in class attributes.
+            </p>
+          </article>
+          <article class="rounded-xl border border-sky-100 bg-sky-50/60 p-4">
+            <h3 class="font-semibold">Design tokens</h3>
+            <p class="mt-1 text-sm text-slate-600">
+              Colors and spacing remain consistent through shared utility
+              scales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <aside
+        class="tailwind-note rounded-2xl border border-teal-200 bg-teal-50 p-5"
+      >
+        <h2 class="text-lg font-bold text-teal-800">Stage notes</h2>
+        <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-teal-900">
+          <li>CDN loaded only on this stage.</li>
+          <li>Most styling is utility classes.</li>
+          <li>Local styles.css is optional polish.</li>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>
