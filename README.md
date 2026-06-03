@@ -18,7 +18,7 @@ $ pip3 install flask && python3 server.py
 ```html
 <head>
   ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   ...
 </head>
 ```
@@ -29,10 +29,42 @@ $ pip3 install flask && python3 server.py
 <head>
   ...
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   ...
 </head>
 ```
+
+## Project Stages
+
+This repository now includes three learning stages, each with its own HTML and CSS:
+
+- `stage-1-semantic-bem/index.html` + `stage-1-semantic-bem/styles.css`
+- `stage-2-tailwind/index.html` + `stage-2-tailwind/styles.css`
+- `stage-3-design-components/index.html` + `stage-3-design-components/styles.css`
+
+The root `index.html` links to every stage so students can compare approaches side by side.
+
+## GitHub Pages Hosting
+
+This repository includes a GitHub Pages workflow in `.github/workflows/pages.yml`.
+
+After enabling Pages in repository settings, the site will be published from the workflow run and available at:
+
+`https://4geeksacademy.github.io/ft-ai-engineering-html-demo/`
+
+If your fork has a different owner or repository name, update the URL pattern accordingly:
+
+`https://<owner>.github.io/<repo>/`
+
+### Recommended GitHub Pages Settings
+
+1. Go to repository Settings -> Pages.
+2. Set Source to `GitHub Actions`.
+3. Push to the deployment branch (`main` by default) to publish updates.
+
+## Known Issues
+
+- Dark mode toggle troubleshooting notes are documented in [TODO.md](TODO.md).
 
 ### Contributors
 

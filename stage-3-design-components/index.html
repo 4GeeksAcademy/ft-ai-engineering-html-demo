@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 3 - Design Components and Composition</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="hero">
+      <p class="hero__eyebrow">Stage 3</p>
+      <h1 class="hero__title">Design Components and Composition</h1>
+      <p class="hero__subtitle">
+        Reusable components are combined into larger patterns across sections,
+        without framework APIs.
+      </p>
+      <a class="button button--solid" href="../index.html">Back to index</a>
+    </header>
+
+    <main class="layout" aria-label="Composed component examples">
+      <section class="panel">
+        <div class="panel__header">
+          <h2 class="panel__title">Component Library Preview</h2>
+          <span class="badge">Reusable</span>
+        </div>
+        <div class="cluster">
+          <article class="card">
+            <h3 class="card__title">Button</h3>
+            <p class="card__text">Used for primary actions and navigation.</p>
+            <a class="button button--ghost" href="#">Read pattern</a>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Card</h3>
+            <p class="card__text">Encapsulates related text and actions.</p>
+            <a class="button button--ghost" href="#">Read pattern</a>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Badge</h3>
+            <p class="card__text">Adds lightweight metadata labels.</p>
+            <a class="button button--ghost" href="#">Read pattern</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel panel--accent">
+        <div class="panel__header">
+          <h2 class="panel__title">Composed Marketing Strip</h2>
+          <span class="badge badge--warm">Composed</span>
+        </div>
+        <div class="split">
+          <div class="stack">
+            <p class="eyebrow">Starter Kit</p>
+            <h3 class="headline">Ship coherent interfaces faster</h3>
+            <p class="lead">
+              By reusing the same button, card, and badge primitives, pages stay
+              visually consistent while remaining flexible.
+            </p>
+            <div class="inline-actions">
+              <a class="button button--solid" href="#">Get started</a>
+              <a class="button button--ghost" href="#">View docs</a>
+            </div>
+          </div>
+          <article class="card card--illustrated">
+            <h3 class="card__title">Composition Rule</h3>
+            <p class="card__text">
+              Combine small, stable components to form larger sections instead
+              of creating one-off styles.
+            </p>
+            <span class="badge">Guideline</span>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
